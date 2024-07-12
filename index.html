@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTG Collectibles Store</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" 
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="preload" href="CSS/normalize.css">
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preload" href="CSS/style.css">
+</head>
+
+<body>
+    <header class="titulo">
+        <div class="busqueda"> <!--buscador de la tienda-->
+            <img class="imagen_logo" src="images/logo_parte_superior.PNG" alt="logo" width="250" height="100">  
+            <form method="get" id="search-form">
+                <fieldset>
+                    <input class="barra-buscador" type="text" id="search-input" placeholder="Busca un producto o nombre de carta"/>
+                    <input class="btn-buscar" type="submit" value="Buscar" />
+                    <i class="search-icon"></i>
+                </fieldset>
+            </form>
+        </div>
+    </header>
+
+    <nav class="barra-navegacion-contenedor"> <!--barra de negacion de la tienda-->
+        <a href="hindex.html">Inicio</a>
+        <a href="sets.html">Sets</a>
+        <a href="singles.html">Singles</a>
+        <a href="about_us.html">About Us</a>
+        <a href="contactanos.html">Contactanos</a>
+    </nav>
+
+    <!-- <nav class="mi-cuenta">
+        <ul class="usuario">
+        <a href="">notificaciones</a>
+        <a href="">Mi cuenta</a>
+        <a href="">compras</a>
+        <a href="">mensajes</a>
+        <a href="">Carrito</a>
+        </ul>
+    </nav> -->
+
+
+
+    <div class="producto-reciente"> <!--seccion de mas recientes-->
+        <br>
+            <h2>Producto mas reciente</h2>
+        <br>
+            <div class="imagenes-producto-reciente">
+                <img class="imagen-reciente" src="images/reciente0.jpg" alt="reciente0" >
+                <img class="imagen-reciente" src="images/reciente1.png" alt="reciente1" >
+                <img class="imagen-reciente" src="images/reciente2.png" alt="reciente2" >
+            </div>
+        <br>
+        <a href="">Ver más...</a>
+    </div>
+
+    <div class="mas-vendido"> <!--seccion de mas vendidos-->
+        <br>
+        <h2>Producto más vendido</h2>
+        <br>
+        <a href="">Ver más...</a>
+    </div>
+
+    <div class="slider"> <!--slider visual, algunos productos-->
+        <ul class="sliders-images">
+            <li><img src="images/slider1.jpg" alt="" width="820" height="500"></li>
+            <li><img src="images/slider2.png" alt="" width="820" height="500"></li>
+            <li><img src="images/slider3.jpg" alt="" width="820" height="500"></li>
+        </ul>
+    </div>
+
+    <div class="sugeridos"> <!--seccion de productos sugeridos-->
+        <h2>Nuestros sugeridos</h2>
+        <br>
+        <!-- <ul class="suggest_images">
+            <li><img src="images/sugerido1.jpg" class="img"></li>
+            <li><img src="images/sugerido2.jpg" class="img"></li>
+            <li><img src="images/sugerido3.jpg" class="img"></li>
+        </ul> -->
+    </div>
+
+    <footer class="pie-de-pagina">
+    <div class="iconos-redes-sociales">
+        <h2>Unete a Nuestra comunidad</h2>
+        <br>
+        <p>Participa en nuestras diferentes comunidades para conocer más de tu pasatiempo favorito</p>
+        <br>
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-x" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+            <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+            <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+            <path d="M16.5 7.5l0 .01" />
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-reddit" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff4500" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M12 8c2.648 0 5.028 .826 6.675 2.14a2.5 2.5 0 0 1 2.326 4.36c0 3.59 -4.03 6.5 -9 6.5c-4.875 0 -8.845 -2.8 -9 -6.294l-1 -.206a2.5 2.5 0 0 1 2.326 -4.36c1.646 -1.313 4.026 -2.14 6.674 -2.14z" />
+            <path d="M12 8l1 -5l6 1" />
+            <path d="M19 4m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+            <circle cx="9" cy="13" r=".5" fill="currentColor" />
+            <circle cx="15" cy="13" r=".5" fill="currentColor" />
+            <path d="M10 17c.667 .333 1.333 .5 2 .5s1.333 -.167 2 -.5" />
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff4500" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z" />
+            <path d="M10 9l5 3l-5 3z" />
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-discord" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6f32be" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M8 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
+            <path d="M14 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
+            <path d="M15.5 17c0 1 1.5 3 2 3c1.5 0 2.833 -1.667 3.5 -3c.667 -1.667 .5 -5.833 -1.5 -11.5c-1.457 -1.015 -3 -1.34 -4.5 -1.5l-.972 1.923a11.913 11.913 0 0 0 -4.053 0l-.975 -1.923c-1.5 .16 -3.043 .485 -4.5 1.5c-2 5.667 -2.167 9.833 -1.5 11.5c.667 1.333 2 3 3.5 3c.5 0 2 -2 2 -3" />
+            <path d="M7 16.5c3.5 1 6.5 1 10 0" />
+        </svg>
+    </footer>
+        
+    </div>
+
+</body>
+</html>
