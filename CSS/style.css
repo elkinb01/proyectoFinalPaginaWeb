@@ -70,10 +70,6 @@ p{
     width: 50rem;
 }
 
-.btn-buscar{
-
-}
-
 .barra-navegacion-contenedor{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
@@ -97,7 +93,6 @@ p{
 
 .imagen-reciente{
     width: 300px;
-    
 }
 
 @media(min-width: 768px){
@@ -114,3 +109,43 @@ p{
     
     }
 }
+
+.mas-vendido{
+    text-align: center;
+}
+
+.position{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%); /*Con esto el div queda centrado*/
+}
+
+.slider{
+    background-image: url(slider1.jpg);
+    background-size: cover;
+    height: 50%;
+    width: 50%;
+    border-radius: 10px;
+    animation: animate 10s infinite;
+}
+
+@keyframes animate {
+    25%{
+        background-image: url(images/sl4.jpg);
+        background-size: cover;
+    }
+    50%{
+        background-image: url(images/sl3.jpg);
+        background-size: cover;
+    }
+    75%{
+        background-image: url(images/sl2.png);
+        background-size: cover;
+    }
+    100%{
+        background-image: url(images/sl1.jpg);
+        background-size: cover;
+    }
+}
+
