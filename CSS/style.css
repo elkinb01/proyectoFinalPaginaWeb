@@ -44,6 +44,22 @@ body{
     transform: scale(1.2);
 }
 
+.titulo .nav-links{
+    list-style: none;
+}
+
+.titulo .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.titulo .nav-links a{
+    font-size: 700;
+    color: red;
+    text-decoration: none;
+}
+
+
 h1, h2, h3{
     text-align: center;
 }
@@ -78,7 +94,7 @@ p{
     width: 300px;
 }
 
-/* @media(min-width: 768px){
+@media(min-width: 768px){
     .imagenes-producto-reciente{
         display: grid;
         grid-template-columns: auto auto;
@@ -90,7 +106,7 @@ p{
         display: grid;
         grid-template-columns: auto auto auto;
     }
-} */
+}
 
 .mas-vendido{
     text-align: center;
@@ -130,4 +146,3 @@ p{
         background-size: cover;
     }
 }
-
