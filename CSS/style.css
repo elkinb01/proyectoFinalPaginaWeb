@@ -1,25 +1,47 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 :root{
     --blanco: #ffffff;
     --oscuro: #000000;
     --gris: #9B9E77;
-    --secundario:#748CAA;
+    --secundario:#203753;
     --primario:#d5a55c;
     --complemento1: #CF6922;
     --complemento2: #CFB222;
 }
 
-html {
+*{
     box-sizing: border-box;
-}
-  *, *:before, *:after {
-    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
 }
 
 body{
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: var(--blanco);
+    background-color: #f3c090;
+}
+
+.titulo{
+    background-color: var(--secundario);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 5px 10%;
+}
+
+.titulo .imagen_logo{
+    cursor: pointer;
+}
+
+.titulo .imagen_logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.titulo .imagen_logo img:hover{
+    transform: scale(1.2);
 }
 
 h1, h2, h3{
@@ -43,45 +65,6 @@ p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.titulo{
-    color: rgb(0, 132, 255);
-}
-
-.busqueda{
-    text-align: center;
-    background-color: var(--complemento1);
-    margin: 0 auto;
-    width: (50rem, 100%);
-    display: flex;
-    grid-template-columns: 20% auto;   
-}
-
-.barra-buscador{
-    margin-top: 1.4rem;
-    margin-left: auto;
-    margin-bottom: 1rem;
-    margin-right: auto;
-    padding: 0%;
-    width: auto;
-    border: 1px solid;
-    border-radius: 1.5rem;
-    text-align: center;
-    height: 2.5rem;
-    width: 50rem;
-}
-
-.barra-navegacion-contenedor{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-    align-items: center;
-    padding: 1rem;
-    background-color: var(--complemento2);
-    flex-direction: column;
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    column-gap:  1rem;
-}
-
 .producto-reciente{
     text-align: center;
 }
@@ -95,7 +78,7 @@ p{
     width: 300px;
 }
 
-@media(min-width: 768px){
+/* @media(min-width: 768px){
     .imagenes-producto-reciente{
         display: grid;
         grid-template-columns: auto auto;
@@ -106,9 +89,8 @@ p{
     .imagenes-producto-reciente{
         display: grid;
         grid-template-columns: auto auto auto;
-    
     }
-}
+} */
 
 .mas-vendido{
     text-align: center;
